@@ -1,0 +1,16 @@
+name: BlastGuard
+version: '1.0'
+main: com.example.BlastGuard
+api-version: '1.21'
+description: A plugin that prevents mob explosions using special totems
+commands:
+  totem:
+    description: Totem management commands
+    usage: /<command> <give|place> [player]
+    permission: blastguard.use
+    permission-message: §cYou do not have permission to use this command!
+
+permissions:
+  blastguard.use:
+    description: Allows players to use totem commands
+    default: op
